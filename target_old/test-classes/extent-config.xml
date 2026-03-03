@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>HTTPS</protocol>
+        <documentTitle>Antigravity Automation Report</documentTitle>
+        <reportName>Flipkart E2E Test Execution</reportName>
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    
+                });
+            ]]>
+        </scripts>
+        <styles>
+            <![CDATA[
+                
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
