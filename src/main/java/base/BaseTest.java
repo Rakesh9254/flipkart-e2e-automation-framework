@@ -40,6 +40,12 @@ public class BaseTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
 
+        // Run headless in CI environments
+        if (System.getenv("CI") != null) {
+            options.addArguments("--headless=new");
+            options.addArguments("--window-size=1920,1080");
+        }
+
         driver = new ChromeDriver(options);
 
         int implicitWait = Integer.parseInt(prop.getProperty("implicitWait", "10"));

@@ -89,6 +89,18 @@ After test execution, reports are available at:
 - **Extent Report** — `test-output/SparkReport/`
 - **Cucumber Cloud** — Auto-published link shown in console output
 
+## CI/CD — GitHub Actions
+
+Tests run automatically on every **push** and **pull request** to `main`.
+
+- ✅ Sets up Java 11 + Chrome on Ubuntu
+- ✅ Runs tests in **headless mode** (no display needed)
+- ✅ Uploads test reports as downloadable artifacts
+
+📍 **Pipeline config:** [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
+
+![CI](https://github.com/Rakesh9254/flipkart-e2e-automation-framework/actions/workflows/ci.yml/badge.svg)
+
 ## Author
 
 **Rakesh** — [GitHub](https://github.com/Rakesh9254)
